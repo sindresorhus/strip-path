@@ -4,7 +4,7 @@ var rePathSepLeftTrim = new RegExp('^' + path.sep + '+');
 
 module.exports = function (pth, strip) {
 	if (!strip || strip.length === 0) {
-		return;
+		return pth;
 	}
 
 	var pos;

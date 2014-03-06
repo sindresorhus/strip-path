@@ -18,3 +18,7 @@ it('should strip path from a file path and trim it', function () {
 it('should strip path from a deep file path and trim it', function () {
 	assert.strictEqual(stripPath('path1/path2/path3/path4/file.ext', 'path1/path2'), path.normalize('path3/path4/file.ext'));
 });
+
+it('should return the path when no strip arg', function () {
+	assert.strictEqual(stripPath('path1/path2', null), path.normalize('path1/path2'));
+});
