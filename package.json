@@ -1,6 +1,6 @@
 {
   "name": "strip-path",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Strip a path from a path",
   "license": "MIT",
   "repository": "sindresorhus/strip-path",
