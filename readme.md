@@ -1,4 +1,4 @@
-# strip-path [![Build Status](https://travis-ci.org/sindresorhus/strip-path.png?branch=master)](https://travis-ci.org/sindresorhus/strip-path)
+# strip-path [![Build Status](https://travis-ci.org/sindresorhus/strip-path.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-path)
 
 > Strip a path from a path
 
@@ -10,12 +10,15 @@ $ npm install --save strip-path
 ```
 
 
-## Example
+## Usage
 
 ```js
+var stripPath = require('strip-path');
+
 stripPath('path1/path2/path3/path4', 'path1/path2');
 //=> 'path3/path4'
 ```
+
 
 ## API
 
