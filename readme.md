@@ -5,7 +5,7 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save strip-path
 ```
 
@@ -27,18 +27,18 @@ stripPath('path1/path2/path3/path4', 'path1/path2');
 #### path
 
 *Required*  
-Type: `String`  
+Type: `string`  
 
 The path to stripped.
 
 #### stripPath
 
 *Required*  
-Type: `String`  
+Type: `string`  
 
 The path to strip from `path`.
 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)

@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var path = require('path');
-var stripPath = require('./index');
+var stripPath = require('./');
 
 it('should strip path from a directory path and trim it', function () {
 	assert.strictEqual(stripPath('path1/path2', 'path1'), 'path2');
