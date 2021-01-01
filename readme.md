@@ -1,4 +1,4 @@
-# strip-path [![Build Status](https://travis-ci.org/sindresorhus/strip-path.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-path)
+# strip-path
 
 > Strip a path from a path
 
