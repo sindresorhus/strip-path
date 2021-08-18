@@ -1,19 +1,17 @@
-'use strict';
-var path = require('path');
-var rePathSepLeftTrim = new RegExp('^' + path.sep + '+');
+import path from 'node:path';
 
-module.exports = function (pth, strip) {
-	if (!strip || strip.length === 0) {
-		return pth;
+const rePathSeparatorLeftTrim = new RegExp(`^${path.sep}+`);
+
+export default function stripPath(path_, stripPath) {
+	if (!stripPath || stripPath.length === 0) {
+		return path_;
 	}
 
-	var pos;
+	path_ = path.normalize(path_);
+	stripPath = path.normalize(stripPath);
+	const pos = path_.indexOf(stripPath);
+	path_ = pos === -1 ? path_ : path_.slice(pos + stripPath.length, path_.length);
+	path_ = path_.replace(rePathSeparatorLeftTrim, '');
 
-	pth = path.normalize(pth);
-	strip = path.normalize(strip);
-	pos = pth.indexOf(strip);
-	pth = pos === -1 ? pth : pth.slice(pos + strip.length, pth.length);
-	pth = pth.replace(rePathSepLeftTrim, '');
-
-	return pth;
-};
+	return path_;
+}

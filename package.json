@@ -1,35 +1,37 @@
 {
-  "name": "strip-path",
-  "version": "1.0.0",
-  "description": "Strip a path from a path",
-  "license": "MIT",
-  "repository": "sindresorhus/strip-path",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "path",
-    "dir",
-    "directory",
-    "file",
-    "strip",
-    "trim",
-    "normalize",
-    "string",
-    "str"
-  ],
-  "devDependencies": {
-    "mocha": "*"
-  }
+	"name": "strip-path",
+	"version": "1.0.0",
+	"description": "Strip a path from a path",
+	"license": "MIT",
+	"repository": "sindresorhus/strip-path",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"path",
+		"directory",
+		"file",
+		"strip",
+		"trim",
+		"normalize",
+		"string"
+	],
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.44.0"
+	}
 }

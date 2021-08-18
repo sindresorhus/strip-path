@@ -2,23 +2,20 @@
 
 > Strip a path from a path
 
-
 ## Install
 
-```sh
-$ npm install --save strip-path
 ```
-
+$ npm install strip-path
+```
 
 ## Usage
 
 ```js
-var stripPath = require('strip-path');
+import stripPath from 'strip-path';
 
 stripPath('path1/path2/path3/path4', 'path1/path2');
 //=> 'path3/path4'
 ```
-
 
 ## API
 
@@ -26,19 +23,14 @@ stripPath('path1/path2/path3/path4', 'path1/path2');
 
 #### path
 
-*Required*  
+*Required*\
 Type: `string`  
 
 The path to stripped.
 
 #### stripPath
 
-*Required*  
+*Required*\
 Type: `string`  
 
 The path to strip from `path`.
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)
